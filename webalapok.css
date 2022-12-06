@@ -71,6 +71,11 @@ main {
 .c:hover {
   box-shadow: 5px 5px 10px 1px #031836;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.c:hover .rovidites {
+  animation: fade 1s 1;
 }
 
 .d {
@@ -102,15 +107,17 @@ main {
 #alcim {
   color: aqua;
   text-align: center;
-  animation: fade 3s alternate;
+  animation: fade 4s 1;
 }
 
 @keyframes fade {
   from {
+    scale: 0;
     opacity: 0;
   }
   to {
     opacity: 1;
+    scale: 1;
   }
 }
 
@@ -124,7 +131,6 @@ main {
 
 #cim {
   padding-top: 5vh;
-  animation: fade;
 }
 
 .text-justify {
